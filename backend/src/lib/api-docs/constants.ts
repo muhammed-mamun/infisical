@@ -1466,3 +1466,28 @@ export const ProjectTemplates = {
     templateId: "The ID of the project template to be deleted."
   }
 };
+
+export const AppConnections = {
+  LIST: {
+    app: "The third-party app to list connections for."
+  },
+  GET_BY_ID: {
+    connectionId: "The ID of the app connection to retrieve."
+  },
+  GET_BY_NAME: {
+    connectionName: "The ID of the app connection to retrieve."
+  },
+  CREATE: {
+    name: "The name of the app connection to create. Must be slug-friendly.",
+    credentials: "The credentials used to connect with the third-party app.",
+    method: "The method used to authenticate with the third-party app."
+  },
+  UPDATE: {
+    connectionId: "The ID of the app connection to be updated.",
+    name: "The updated name of the app connection. Must be slug-friendly.",
+    credentials: "The updated credentials to connect with the third-party app."
+  },
+  DELETE: {
+    connectionId: "The ID of the app connection to be deleted."
+  }
+};

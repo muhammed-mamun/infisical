@@ -342,6 +342,7 @@ import {
   TWorkflowIntegrationsInsert,
   TWorkflowIntegrationsUpdate
 } from "@app/db/schemas";
+import { TAppConnections, TAppConnectionsInsert, TAppConnectionsUpdate } from "@app/db/schemas/app-connections";
 import {
   TExternalGroupOrgRoleMappings,
   TExternalGroupOrgRoleMappingsInsert,
@@ -830,5 +831,10 @@ declare module "knex/types/tables" {
       TProjectTemplatesUpdate
     >;
     [TableName.TotpConfig]: KnexOriginal.CompositeTableType<TTotpConfigs, TTotpConfigsInsert, TTotpConfigsUpdate>;
+    [TableName.AppConnection]: KnexOriginal.CompositeTableType<
+      TAppConnections,
+      TAppConnectionsInsert,
+      TAppConnectionsUpdate
+    >;
   }
 }

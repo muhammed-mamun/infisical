@@ -64,3 +64,8 @@ export type OrgServiceActor = {
   authMethod: ActorAuthMethod;
   orgId: string;
 };
+
+export enum AppConnection {
+  GitHub = "github",
+  AWS = "aws"
+}
